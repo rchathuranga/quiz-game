@@ -2,9 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/game-view.css">
 </head>
 <body>
+<div class="space-craft-wrapper">
+    <div>
+        <img src="../assets/img/ship1.png" alt="" width="100%">
+    </div>
+</div>
+<main class="background" id="background" >
+    <div id="background-container">
 
+        <main class="background-image"></main>
+        <main class="background-image"></main>
+        <!--    <main class="background-image"></main>-->
+        <!--    <main class="background-image"></main>-->
+    </div>
+</main>
+<main class="side-quiz-panel">
+    <header class="quiz-header">
+        <h1>Qustion No </h1>
+    </header>
+    <main class="quiz-body">
+        <div class="quiz-question">
+            <div class="quiz-q-n-wrapper">
+                <h3 id="quiz-question-number">01</h3>
+            </div>
+            <div class="quiz-q-t-wrapper">
+                <h3 id="quiz-question-text"></h3>
+            </div>
+        </div>
+        <div class="quiz-answer">
+
+            <div class="quiz-answer-grid">
+                <div class="quiz-a-item">01</div>
+                <div class="quiz-a-item">02</div>
+                <div class="quiz-a-item">04</div>
+                <div class="quiz-a-item">05</div>
+
+            </div>
+
+        </div>
+
+    </main>
+</main>
+<script src="../script/jquery-3.4.1.min.js"></script>
+<script src="../script/particles.min.js"></script>
+<script src="../script/game-data.js"></script>
+<script src="../script/game-view.js"></script>
+<script src="../script/game-engine.js"></script>
 </body>
 </html>

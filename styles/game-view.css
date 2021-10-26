@@ -1,0 +1,148 @@
+
+body {
+    display: flex;
+    /*width: 100%;*/
+    background: black;
+    /*overflow: -moz-scrollbars-vertical;*/
+    /*overflow-x: hidden;*/
+    /*overflow-y: auto;*/
+
+}
+
+body::-webkit-scrollbar {
+    width: 1px;
+    /*background: red;*/
+}
+
+#background {
+    position: relative;
+
+    transform: scale(1);
+    transition: all .8s ease-in-out;
+}
+
+.background-image {
+
+
+    width: 70vw;
+    height: 100vh;
+    background: url("../assets/img/BackgroundSpace.png") no-repeat;
+    background-size: cover;
+}
+
+.space-craft-wrapper {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+
+    bottom: 10px;
+    /*left: 0;*/
+    right: 60%;
+    /*right: 0;*/
+    margin: 0 auto;
+
+    /*background: #f0364e;*/
+    z-index: 10;
+
+    transition: all .8s ease-in-out;
+}
+
+.space-craft-wrapper img {
+    transform: rotate(-90deg) scale(1);
+}
+
+#background-container {
+    position: relative;
+
+    /*position: absolute;*/
+    /*top: 0;*/
+
+}
+
+.particles-js-canvas-el {
+    /*width: 70% !important;*/
+    display: flex;
+    position: fixed;
+    z-index: 11;
+}
+
+.side-quiz-panel {
+    position: fixed;
+    right: 0;
+    background: #20244a;
+    width: 30vw;
+    height: 100vh;
+}
+
+.quiz-header {
+    width: 100%;
+    height: 50px;
+    background: #151734;
+    padding: 10px;
+}
+
+.side-quiz-panel h1, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.side-quiz-panel * {
+    color: white;
+}
+
+.quiz-body {
+    padding: 10px 20px;
+
+}
+
+.quiz-q-n-wrapper {
+    font-size: 30px;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-q-t-wrapper {
+    margin: 30px 0;
+    font-size: 24px;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    /*background: rebeccapurple;*/
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-answer {
+    margin-top: 100px;
+}
+
+.quiz-answer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.quiz-a-item {
+    padding: 10px;
+    border-radius: 8px;
+    height: 50px;
+    background: #f0364e;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: border .6s;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-a-item:hover {
+    border: 3px solid white;
+}
