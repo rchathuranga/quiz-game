@@ -26,7 +26,7 @@ body::-webkit-scrollbar {
 
     width: 70vw;
     height: 100vh;
-    background: url("../assets/img/BackgroundSpace.png") no-repeat;
+    background: url("../../assets/img/BackgroundSpace.png") no-repeat;
     background-size: cover;
 }
 

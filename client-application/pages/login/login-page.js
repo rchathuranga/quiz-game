@@ -15,7 +15,7 @@ $('input').on('keyup',function (e) {
     if(e.keyCode==13){
         var name=$('input').val();
         sessionStorage.setItem('Name',name);
-        window.location.href="pages/game-view.html";
+        window.location.href="../pages/game/game-view.html";
     }
 })
 
