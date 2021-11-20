@@ -129,6 +129,7 @@ body::-webkit-scrollbar {
 }
 
 .quiz-a-item {
+    font-size: 25px;
     padding: 10px;
     border-radius: 8px;
     height: 50px;
